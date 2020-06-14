@@ -1,0 +1,9 @@
+# comment
+# in next line: P3 defines image format
+# and number of columns and rows respectively
+P3 3 2
+# maximum color value
+255
+#image data: RGB triplets
+255 0 0 0 255 0 0 0 255
+255 255 0 255 255 255 0 0 0
