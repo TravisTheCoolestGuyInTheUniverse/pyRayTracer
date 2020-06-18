@@ -1,4 +1,5 @@
 from pixel import Pixel
+
 class Image:
     def __init__(self, rows, cols, imgFormat):
         self.rows = rows
