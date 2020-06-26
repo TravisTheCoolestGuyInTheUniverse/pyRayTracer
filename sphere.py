@@ -5,10 +5,10 @@ class Sphere:
     """
     Sphere class. defined by center, radius, and color.
     """
-    def __init__(self, centerPoint, radius, color):
+    def __init__(self, centerPoint, radius, material):
         self.centerPoint = centerPoint
         self.radius = radius
-        self.color = color
+        self.material = material
 
     """
     interesting that the intersect function is here in the tutorial.
@@ -28,3 +28,9 @@ class Sphere:
             if dist > 0:
                 return dist
         return None
+
+    """
+    returns surface normal to a point on the spheres surface
+    """
+    def normal(self, surfacePoint):
+        return (surfacePoint-self.centerPoint).normalize()
