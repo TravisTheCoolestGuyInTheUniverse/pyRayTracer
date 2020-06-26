@@ -50,22 +50,3 @@ class Vector:
 
     def __str__(self):
         return f"{self.x}, {self.y}, {self.z}"
-
-
-
-
-if __name__ == "__main__":
-    v = Vector(1, -2, -2)
-    v2 = Vector(3, 6, 9)
-    print(v.magnitude())
-    nv = v.normalize()
-    print(nv)
-    print(v.dot(v2))
-    av = v + v2
-    print(av)
-    sv = v - v2
-    print(sv)
-    mv = 2 * v
-    print(mv)
-    dv = v2 / 3
-    print(dv)
